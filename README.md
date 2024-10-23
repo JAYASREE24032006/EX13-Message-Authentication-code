@@ -1,8 +1,9 @@
 # EX13 - MESSAGE AUTHENTICATION CODE(MAC)
 ## AIM :
 To implement a Message Authentication Code (MAC) using a cryptographic hash function to ensure the integrity and authenticity of a message.
-
-## DESIGN STEPS :
+## THEORM :
+A Message Authentication Code (MAC) is a cryptographic checksum that verifies the integrity and authenticity of a message. It combines a secret key with the message data to produce a fixed-size string, which is then appended to the message. MACs protect against tampering and unauthorized access, ensuring data integrity and authenticity.
+## ALGORITHM :
 ### STEP 1 :
 Choose a large prime number p and a generator g of the multiplicative group of integers modulo p.
 
