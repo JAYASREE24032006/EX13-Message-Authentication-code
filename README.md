@@ -1,26 +1,26 @@
-# EX13 - Message Authentication Code (MAC)
+# EX13 - MESSAGE AUTHENTICATION CODE(MAC)
 ## AIM :
 To implement a Message Authentication Code (MAC) using a cryptographic hash function to ensure the integrity and authenticity of a message.
 
 ## DESIGN STEPS :
-### Step 1 :
+### STEP 1 :
 Choose a large prime number p and a generator g of the multiplicative group of integers modulo p.
 
-### Step 2 :
+### STEP 2 :
 Alice chooses a private key and computes her public key as
 ```
 public_key = g^private_key mod p.
 ```
-### Step 3 : 
+### STEP 3 : 
 To encrypt a message, Bob chooses a random number k and computes a ciphertext pair (c1, c2).
 
-### Step 4 : 
+### STEP 4 : 
 To decrypt the message, Alice uses her private key and computes the original message.
 
-### Step 5 : 
+### STEP 5 : 
 The decrypted message is verified to be the same as the original
 
-## Program :
+## PROGRAM :
 ```
 #include <stdio.h>
 #include <math.h>
@@ -62,9 +62,9 @@ int main()
     return 0;
 }
 ```
-## Output :
+## OUTPUT :
 
 ![image](https://github.com/user-attachments/assets/5f9caa4a-47ad-4277-af6f-124ca3768e7b)
 
 ## RESULT :
-The implementation of the Message Authentication Code (MAC) using HMAC with the SHA-256 hash function was successful. The generated MAC ensures the integrity and authenticity of the message.
+The program for the implementation of the Message Authentication Code (MAC) using HMAC with the SHA-256 hash function was executed successful. 
